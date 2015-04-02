@@ -5,4 +5,13 @@
  *      Author: iMacHome
  */
 
+#include <stdio.h>
 
+int main (void)
+{
+    int i = 0;
+
+    printf("Hello XMOS World!!\n");
+
+    return 0;
+}
