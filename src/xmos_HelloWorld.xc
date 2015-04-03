@@ -13,6 +13,7 @@ int main (void)
 
     printf("Hello XMOS World!!\n");
     printf("Hello AVB World!!\n");
+    printf("Hello Git World!!\n");
 
     return 0;
 }
