@@ -12,6 +12,7 @@ int main (void)
     int i = 0;
 
     printf("Hello XMOS World!!\n");
+    printf("Hello AVB World!!\n");
 
     return 0;
 }
