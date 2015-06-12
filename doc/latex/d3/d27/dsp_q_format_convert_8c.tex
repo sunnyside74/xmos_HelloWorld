@@ -1,0 +1,314 @@
+\hypertarget{dsp_q_format_convert_8c}{\section{dsp\+Q\+Format\+Convert.\+c 파일 참조}
+\label{dsp_q_format_convert_8c}\index{dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}}
+}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}dsp\+Filter.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}dsp\+Q\+Format\+Convert.\+h\char`\"{}}\\*
+dsp\+Q\+Format\+Convert.\+c에 대한 include 의존 그래프
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d43/dsp_q_format_convert_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{dsp_q_format_convert_8c_a646289654152ae05600606013b945c86}{Float2\+Q\+Format\+Convert} (\hyperlink{dsp_filter_8h_aeceef54faa278512cd3b46e47d71de18}{\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F} param\+\_\+t\+Filt\+Coef, \hyperlink{dsp_filter_8h_ad441c1c66a421036640642bf5f66b7fa}{\+\_\+\+Q\+\_\+\+F\+O\+R\+M\+A\+T} $\ast$param\+\_\+t\+Filt\+Q\+Form, unsigned int fix\+Num, unsigned int frac\+Num)
+\begin{DoxyCompactList}\small\item\em Floating Point Filter Coefficient convert to Fixed Point Q Format Qm.\+n~\newline
+. \end{DoxyCompactList}\item 
+int \hyperlink{dsp_q_format_convert_8c_afdb499fad2e27d0ac12c8ff37876f234}{Q\+Format2\+Float\+Convert} (\hyperlink{dsp_filter_8h_ad441c1c66a421036640642bf5f66b7fa}{\+\_\+\+Q\+\_\+\+F\+O\+R\+M\+A\+T} param\+\_\+filt\+Q\+Form, \hyperlink{dsp_filter_8h_aeceef54faa278512cd3b46e47d71de18}{\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F} $\ast$param\+\_\+filt\+Coef, unsigned int fix\+Num, unsigned int frac\+Num)
+\item 
+void \hyperlink{dsp_q_format_convert_8c_a5f03ce0a0de11a675df423d641fe58b2}{Print\+Coef} (int mode, \hyperlink{dsp_filter_8h_aeceef54faa278512cd3b46e47d71de18}{\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F} param\+\_\+t\+Filt\+Coef, \hyperlink{dsp_filter_8h_ad441c1c66a421036640642bf5f66b7fa}{\+\_\+\+Q\+\_\+\+F\+O\+R\+M\+A\+T} param\+\_\+t\+Filt\+Q\+Form, float val\+Freq, float val\+Q, float val\+Gain)
+\item 
+int \hyperlink{dsp_q_format_convert_8c_a16501f69f57199c5dc647b0fdb9f00bb}{Q\+Format\+Convert} (float param\+\_\+filt\+Coef, int $\ast$param\+\_\+filt\+Q\+Form, unsigned int frac\+Num)
+\begin{DoxyCompactList}\small\item\em Q Format Converter Function. \end{DoxyCompactList}\item 
+int \hyperlink{dsp_q_format_convert_8c_a81334f577bbbfde46b471108f5a648d4}{Q\+Form2\+Float\+Converter} (int param\+\_\+filt\+Q\+Form, float $\ast$param\+\_\+filt\+Coef, unsigned int frac\+Num)
+\end{DoxyCompactItemize}
+\subsection*{변수}
+\begin{DoxyCompactItemize}
+\item 
+const float \hyperlink{dsp_q_format_convert_8c_ada0744b21abba6961e3e55749e1eee1f}{g\+\_\+two\+Pi} = 6.\+283185307179586476925286766559
+\item 
+const float \hyperlink{dsp_q_format_convert_8c_a171eefc2107c2a6148dd6b050aa629ea}{g\+\_\+fs} = \hyperlink{dsp_q_format_convert_8h_a4b76a0c2859cfd819a343a780070ee2b}{S\+A\+M\+P\+L\+E\+\_\+\+R\+A\+T\+E}
+\item 
+const unsigned char \hyperlink{dsp_q_format_convert_8c_a3d43538ea1ab2e5c29aee81a46293698}{str2nd\+Lo\+Shelf\+Filter} \mbox{[}$\,$\mbox{]} = \char`\"{}2nd Order Low Shelf Filter\+:\textbackslash{}0\char`\"{}
+\item 
+const unsigned char \hyperlink{dsp_q_format_convert_8c_addaa4776cfc6bc81f7fd3bdbc53c48fb}{str2nd\+Hi\+Shelf\+Filter} \mbox{[}$\,$\mbox{]} = \char`\"{}2nd Order High Shelf Filter\+:\textbackslash{}0\char`\"{}
+\item 
+const unsigned char \hyperlink{dsp_q_format_convert_8c_af1412449d6875a0a2a272e2affa062a9}{str\+Peak\+Filter} \mbox{[}$\,$\mbox{]} = \char`\"{}Peaking Filter\+:\textbackslash{}0\char`\"{}
+\item 
+const unsigned char \hyperlink{dsp_q_format_convert_8c_a82f69c2969fbcf32622f497a3c348f61}{str\+Peq\+Filter} \mbox{[}$\,$\mbox{]} = \char`\"{}Parametric E\+Q Filter\+:\textbackslash{}0\char`\"{}
+\item 
+const unsigned char \hyperlink{dsp_q_format_convert_8c_a926c3674b0a07cbef1693833c86098a6}{str1st\+Lo\+Shelf\+Filter} \mbox{[}$\,$\mbox{]} = \char`\"{}1st Order Low Shelf Filter\+:\textbackslash{}0\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+\begin{DoxyDate}{날짜}
+2015. 6. 10. 
+\end{DoxyDate}
+\begin{DoxyAuthor}{작성자}
+i04055dt 
+\end{DoxyAuthor}
+
+
+\hyperlink{dsp_q_format_convert_8c_source}{dsp\+Q\+Format\+Convert.\+c} 파일에서 정의되었습니다.
+
+
+
+\subsection{함수 문서화}
+\hypertarget{dsp_q_format_convert_8c_a646289654152ae05600606013b945c86}{\index{dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}!Float2\+Q\+Format\+Convert@{Float2\+Q\+Format\+Convert}}
+\index{Float2\+Q\+Format\+Convert@{Float2\+Q\+Format\+Convert}!dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}}
+\subsubsection[{Float2\+Q\+Format\+Convert}]{\setlength{\rightskip}{0pt plus 5cm}int Float2\+Q\+Format\+Convert (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F}}]{param\+\_\+t\+Filt\+Coef, }
+\item[{{\bf \+\_\+\+Q\+\_\+\+F\+O\+R\+M\+A\+T} $\ast$}]{param\+\_\+t\+Filt\+Q\+Form, }
+\item[{unsigned int}]{fix\+Num, }
+\item[{unsigned int}]{frac\+Num}
+\end{DoxyParamCaption}
+)}}\label{dsp_q_format_convert_8c_a646289654152ae05600606013b945c86}
+
+
+Floating Point Filter Coefficient convert to Fixed Point Q Format Qm.\+n~\newline
+. 
+
+
+\begin{DoxyItemize}
+\item Input/\+Output is the Structure of Filter Coefficients \& Q Format Coefficients
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{매개변수}
+{\em param\+\_\+t\+Filt\+Coef} & Src\+: Floating Point Filter Coefficient \\
+\hline
+{\em param\+\_\+t\+Filt\+Q\+Form} & Des\+: Q Format Integer Filter Coefficient \\
+\hline
+{\em fix\+Num} & Q Format Fixed Bit Number \\
+\hline
+{\em frac\+Num} & Q Format Fraction Bit Number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+No Error\+: 0, Error\+: -\/1 
+\end{DoxyReturn}
+
+
+dsp\+Q\+Format\+Convert.\+c 파일의 33 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::a1, \+\_\+\+\_\+\+Q\+\_\+\+F\+O\+R\+M\+A\+T\+::a1, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::a2, \+\_\+\+\_\+\+Q\+\_\+\+F\+O\+R\+M\+A\+T\+::a2, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b0, \+\_\+\+\_\+\+Q\+\_\+\+F\+O\+R\+M\+A\+T\+::b0, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b1, \+\_\+\+\_\+\+Q\+\_\+\+F\+O\+R\+M\+A\+T\+::b1, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b2, \+\_\+\+\_\+\+Q\+\_\+\+F\+O\+R\+M\+A\+T\+::b2.
+
+\hypertarget{dsp_q_format_convert_8c_a5f03ce0a0de11a675df423d641fe58b2}{\index{dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}!Print\+Coef@{Print\+Coef}}
+\index{Print\+Coef@{Print\+Coef}!dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}}
+\subsubsection[{Print\+Coef}]{\setlength{\rightskip}{0pt plus 5cm}void Print\+Coef (
+\begin{DoxyParamCaption}
+\item[{int}]{mode, }
+\item[{{\bf \+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F}}]{param\+\_\+t\+Filt\+Coef, }
+\item[{{\bf \+\_\+\+Q\+\_\+\+F\+O\+R\+M\+A\+T}}]{param\+\_\+t\+Filt\+Q\+Form, }
+\item[{float}]{val\+Freq, }
+\item[{float}]{val\+Q, }
+\item[{float}]{val\+Gain}
+\end{DoxyParamCaption}
+)}}\label{dsp_q_format_convert_8c_a5f03ce0a0de11a675df423d641fe58b2}
+Print Filter Coefficient Floating Value And Q1.\+31 Format 
+\begin{DoxyParams}{매개변수}
+{\em mode} & E\+Q Filter Mode~\newline
+
+\begin{DoxyItemize}
+\item 0\+: Low Pass Shelving Filter~\newline
+
+\item 1\+: High Pass Shelving Filter~\newline
+
+\item 2\+: Peak Filter~\newline
+
+\item 3\+: Parametric E\+Q Filter~\newline
+
+\item 4\+: 1st order Low Pass Shelving Filter 
+\end{DoxyItemize}\\
+\hline
+{\em param\+\_\+t\+Filt\+Coef} & \\
+\hline
+{\em param\+\_\+t\+Filt\+Q\+Form} & \\
+\hline
+{\em val\+Freq} & \\
+\hline
+{\em val\+Q} & \\
+\hline
+{\em val\+Gain} & \\
+\hline
+\end{DoxyParams}
+
+
+dsp\+Q\+Format\+Convert.\+c 파일의 101 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::a1, \+\_\+\+\_\+\+Q\+\_\+\+F\+O\+R\+M\+A\+T\+::a1, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::a2, \+\_\+\+\_\+\+Q\+\_\+\+F\+O\+R\+M\+A\+T\+::a2, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b0, \+\_\+\+\_\+\+Q\+\_\+\+F\+O\+R\+M\+A\+T\+::b0, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b1, \+\_\+\+\_\+\+Q\+\_\+\+F\+O\+R\+M\+A\+T\+::b1, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b2, \+\_\+\+\_\+\+Q\+\_\+\+F\+O\+R\+M\+A\+T\+::b2, str1st\+Lo\+Shelf\+Filter, str2nd\+Hi\+Shelf\+Filter, str2nd\+Lo\+Shelf\+Filter, str\+Peak\+Filter, str\+Peq\+Filter.
+
+\hypertarget{dsp_q_format_convert_8c_a81334f577bbbfde46b471108f5a648d4}{\index{dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}!Q\+Form2\+Float\+Converter@{Q\+Form2\+Float\+Converter}}
+\index{Q\+Form2\+Float\+Converter@{Q\+Form2\+Float\+Converter}!dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}}
+\subsubsection[{Q\+Form2\+Float\+Converter}]{\setlength{\rightskip}{0pt plus 5cm}int Q\+Form2\+Float\+Converter (
+\begin{DoxyParamCaption}
+\item[{int}]{param\+\_\+filt\+Q\+Form, }
+\item[{float $\ast$}]{param\+\_\+filt\+Coef, }
+\item[{unsigned int}]{frac\+Num}
+\end{DoxyParamCaption}
+)}}\label{dsp_q_format_convert_8c_a81334f577bbbfde46b471108f5a648d4}
+
+\begin{DoxyParams}{매개변수}
+{\em param\+\_\+filt\+Q\+Form} & \\
+\hline
+{\em param\+\_\+filt\+Coef} & \\
+\hline
+{\em frac\+Num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Error 
+\end{DoxyReturn}
+
+
+dsp\+Q\+Format\+Convert.\+c 파일의 215 번째 라인에서 정의되었습니다.
+
+\hypertarget{dsp_q_format_convert_8c_afdb499fad2e27d0ac12c8ff37876f234}{\index{dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}!Q\+Format2\+Float\+Convert@{Q\+Format2\+Float\+Convert}}
+\index{Q\+Format2\+Float\+Convert@{Q\+Format2\+Float\+Convert}!dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}}
+\subsubsection[{Q\+Format2\+Float\+Convert}]{\setlength{\rightskip}{0pt plus 5cm}int Q\+Format2\+Float\+Convert (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+Q\+\_\+\+F\+O\+R\+M\+A\+T}}]{param\+\_\+filt\+Q\+Form, }
+\item[{{\bf \+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F} $\ast$}]{param\+\_\+filt\+Coef, }
+\item[{unsigned int}]{fix\+Num, }
+\item[{unsigned int}]{frac\+Num}
+\end{DoxyParamCaption}
+)}}\label{dsp_q_format_convert_8c_afdb499fad2e27d0ac12c8ff37876f234}
+
+\begin{DoxyParams}{매개변수}
+{\em param\+\_\+filt\+Q\+Form} & Src\+: Q Format Integer Filter Coefficient \\
+\hline
+{\em param\+\_\+filt\+Coef} & Des\+: Floating Point Filter Coefficient \\
+\hline
+{\em fix\+Num} & Q Format Fixed Bit Number \\
+\hline
+{\em frac\+Num} & Q Format Fraction Bit Number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+
+\end{DoxyReturn}
+
+
+dsp\+Q\+Format\+Convert.\+c 파일의 75 번째 라인에서 정의되었습니다.
+
+\hypertarget{dsp_q_format_convert_8c_a16501f69f57199c5dc647b0fdb9f00bb}{\index{dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}!Q\+Format\+Convert@{Q\+Format\+Convert}}
+\index{Q\+Format\+Convert@{Q\+Format\+Convert}!dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}}
+\subsubsection[{Q\+Format\+Convert}]{\setlength{\rightskip}{0pt plus 5cm}int Q\+Format\+Convert (
+\begin{DoxyParamCaption}
+\item[{float}]{param\+\_\+filt\+Coef, }
+\item[{int $\ast$}]{param\+\_\+filt\+Q\+Form, }
+\item[{unsigned int}]{frac\+Num}
+\end{DoxyParamCaption}
+)}}\label{dsp_q_format_convert_8c_a16501f69f57199c5dc647b0fdb9f00bb}
+
+
+Q Format Converter Function. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em param\+\_\+filt\+Coef} & Src\+: Floating Point Filter Coefficient \\
+\hline
+{\em param\+\_\+filt\+Q\+Form} & Des\+: Q Format Integer Filter Coefficient \\
+\hline
+{\em frac\+Num} & Q Format Fraction Bit Number (n number of Qm.\+n format) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Error -\/1, Normal\+: 0 
+\end{DoxyReturn}
+
+
+dsp\+Q\+Format\+Convert.\+c 파일의 181 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{변수 문서화}
+\hypertarget{dsp_q_format_convert_8c_a171eefc2107c2a6148dd6b050aa629ea}{\index{dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}!g\+\_\+fs@{g\+\_\+fs}}
+\index{g\+\_\+fs@{g\+\_\+fs}!dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}}
+\subsubsection[{g\+\_\+fs}]{\setlength{\rightskip}{0pt plus 5cm}const float g\+\_\+fs = {\bf S\+A\+M\+P\+L\+E\+\_\+\+R\+A\+T\+E}}}\label{dsp_q_format_convert_8c_a171eefc2107c2a6148dd6b050aa629ea}
+
+
+dsp\+Q\+Format\+Convert.\+c 파일의 15 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Peaking\+Filter(), Peq\+Filter(), Shelving\+Filter1st\+Low(), Shelving\+Filter2nd\+High(), Shelving\+Filter2nd\+Low().
+
+\hypertarget{dsp_q_format_convert_8c_ada0744b21abba6961e3e55749e1eee1f}{\index{dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}!g\+\_\+two\+Pi@{g\+\_\+two\+Pi}}
+\index{g\+\_\+two\+Pi@{g\+\_\+two\+Pi}!dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}}
+\subsubsection[{g\+\_\+two\+Pi}]{\setlength{\rightskip}{0pt plus 5cm}const float g\+\_\+two\+Pi = 6.\+283185307179586476925286766559}}\label{dsp_q_format_convert_8c_ada0744b21abba6961e3e55749e1eee1f}
+
+
+dsp\+Q\+Format\+Convert.\+c 파일의 14 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Peaking\+Filter(), Peq\+Filter(), Shelving\+Filter1st\+Low(), Shelving\+Filter2nd\+High(), Shelving\+Filter2nd\+Low().
+
+\hypertarget{dsp_q_format_convert_8c_a926c3674b0a07cbef1693833c86098a6}{\index{dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}!str1st\+Lo\+Shelf\+Filter@{str1st\+Lo\+Shelf\+Filter}}
+\index{str1st\+Lo\+Shelf\+Filter@{str1st\+Lo\+Shelf\+Filter}!dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}}
+\subsubsection[{str1st\+Lo\+Shelf\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned char str1st\+Lo\+Shelf\+Filter\mbox{[}$\,$\mbox{]} = \char`\"{}1st Order Low Shelf Filter\+:\textbackslash{}0\char`\"{}}}\label{dsp_q_format_convert_8c_a926c3674b0a07cbef1693833c86098a6}
+
+
+dsp\+Q\+Format\+Convert.\+c 파일의 21 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Print\+Coef().
+
+\hypertarget{dsp_q_format_convert_8c_addaa4776cfc6bc81f7fd3bdbc53c48fb}{\index{dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}!str2nd\+Hi\+Shelf\+Filter@{str2nd\+Hi\+Shelf\+Filter}}
+\index{str2nd\+Hi\+Shelf\+Filter@{str2nd\+Hi\+Shelf\+Filter}!dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}}
+\subsubsection[{str2nd\+Hi\+Shelf\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned char str2nd\+Hi\+Shelf\+Filter\mbox{[}$\,$\mbox{]} = \char`\"{}2nd Order High Shelf Filter\+:\textbackslash{}0\char`\"{}}}\label{dsp_q_format_convert_8c_addaa4776cfc6bc81f7fd3bdbc53c48fb}
+
+
+dsp\+Q\+Format\+Convert.\+c 파일의 18 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Print\+Coef().
+
+\hypertarget{dsp_q_format_convert_8c_a3d43538ea1ab2e5c29aee81a46293698}{\index{dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}!str2nd\+Lo\+Shelf\+Filter@{str2nd\+Lo\+Shelf\+Filter}}
+\index{str2nd\+Lo\+Shelf\+Filter@{str2nd\+Lo\+Shelf\+Filter}!dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}}
+\subsubsection[{str2nd\+Lo\+Shelf\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned char str2nd\+Lo\+Shelf\+Filter\mbox{[}$\,$\mbox{]} = \char`\"{}2nd Order Low Shelf Filter\+:\textbackslash{}0\char`\"{}}}\label{dsp_q_format_convert_8c_a3d43538ea1ab2e5c29aee81a46293698}
+
+
+dsp\+Q\+Format\+Convert.\+c 파일의 17 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Print\+Coef().
+
+\hypertarget{dsp_q_format_convert_8c_af1412449d6875a0a2a272e2affa062a9}{\index{dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}!str\+Peak\+Filter@{str\+Peak\+Filter}}
+\index{str\+Peak\+Filter@{str\+Peak\+Filter}!dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}}
+\subsubsection[{str\+Peak\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned char str\+Peak\+Filter\mbox{[}$\,$\mbox{]} = \char`\"{}Peaking Filter\+:\textbackslash{}0\char`\"{}}}\label{dsp_q_format_convert_8c_af1412449d6875a0a2a272e2affa062a9}
+
+
+dsp\+Q\+Format\+Convert.\+c 파일의 19 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Print\+Coef().
+
+\hypertarget{dsp_q_format_convert_8c_a82f69c2969fbcf32622f497a3c348f61}{\index{dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}!str\+Peq\+Filter@{str\+Peq\+Filter}}
+\index{str\+Peq\+Filter@{str\+Peq\+Filter}!dsp\+Q\+Format\+Convert.\+c@{dsp\+Q\+Format\+Convert.\+c}}
+\subsubsection[{str\+Peq\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned char str\+Peq\+Filter\mbox{[}$\,$\mbox{]} = \char`\"{}Parametric E\+Q Filter\+:\textbackslash{}0\char`\"{}}}\label{dsp_q_format_convert_8c_a82f69c2969fbcf32622f497a3c348f61}
+
+
+dsp\+Q\+Format\+Convert.\+c 파일의 20 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Print\+Coef().
+

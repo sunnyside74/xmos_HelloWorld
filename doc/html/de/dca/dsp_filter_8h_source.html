@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>xmos_HelloWorld: dspFilter.h 소스 파일</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">xmos_HelloWorld
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="../../annotated.html"><span>데이타&#160;구조</span></a></li>
+      <li class="current"><a href="../../files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="../../globals.html"><span>전역</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('de/dca/dsp_filter_8h_source.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>데이타 구조</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>파일들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>함수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>변수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>타입정의</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>매크로</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dspFilter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../de/dca/dsp_filter_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef DSPFILTER_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define DSPFILTER_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html">   14</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html">__FILT_COEF</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html#ab7a4e5aa04e332119f7ed50b2fdf55bc">   16</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html#ab7a4e5aa04e332119f7ed50b2fdf55bc">b0</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html#a6b091370c641032308e29256f8ed3ea1">   17</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html#a6b091370c641032308e29256f8ed3ea1">b1</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html#a5d1f0db7785187119dbdd01681d9d230">   18</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html#a5d1f0db7785187119dbdd01681d9d230">b2</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html#a0a8a4d4cc79f407d2123b75794233cd8">   19</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html#a0a8a4d4cc79f407d2123b75794233cd8">a1</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html#aeb8fe784561c14b524f8d8527c723b2c">   20</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html#aeb8fe784561c14b524f8d8527c723b2c">a2</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;} <a class="code" href="../../de/dca/dsp_filter_8h.html#aeceef54faa278512cd3b46e47d71de18">_FILT_COEF</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../de/d4e/struct_____q___f_o_r_m_a_t.html">   26</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../de/d4e/struct_____q___f_o_r_m_a_t.html">__Q_FORMAT</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../de/d4e/struct_____q___f_o_r_m_a_t.html#a0fc0b104bef03cc7de69bbb5e06cf942">   28</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../de/d4e/struct_____q___f_o_r_m_a_t.html#a0fc0b104bef03cc7de69bbb5e06cf942">b0</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../de/d4e/struct_____q___f_o_r_m_a_t.html#af204737e7c2b102b6c9a5272b9fe6856">   29</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../de/d4e/struct_____q___f_o_r_m_a_t.html#af204737e7c2b102b6c9a5272b9fe6856">b1</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../de/d4e/struct_____q___f_o_r_m_a_t.html#aea8cafcb12a82b3f125480d1c0ac0d97">   30</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../de/d4e/struct_____q___f_o_r_m_a_t.html#aea8cafcb12a82b3f125480d1c0ac0d97">b2</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../de/d4e/struct_____q___f_o_r_m_a_t.html#a3bdaae0a32b731c7aadb02b96334e254">   31</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../de/d4e/struct_____q___f_o_r_m_a_t.html#a3bdaae0a32b731c7aadb02b96334e254">a1</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../de/d4e/struct_____q___f_o_r_m_a_t.html#adf82b4d95ce195a01c00f0c2f4e043f5">   32</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../de/d4e/struct_____q___f_o_r_m_a_t.html#adf82b4d95ce195a01c00f0c2f4e043f5">a2</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <a class="code" href="../../de/dca/dsp_filter_8h.html#ad441c1c66a421036640642bf5f66b7fa">_Q_FORMAT</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/dca/dsp_filter_8h.html#a8d5e02bc4a738671a9b7841ea6d12e2c">ShelvingFilter2ndLow</a>(</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html">_FILT_COEF</a> *param_FiltCoef,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">float</span> param_freq,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">float</span> param_qValue,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">float</span> param_gainDb</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        );</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/dca/dsp_filter_8h.html#a15386878cb5f5b907f6d2a31f6b275f4">ShelvingFilter2ndHigh</a>(</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html">_FILT_COEF</a> *param_FiltCoef,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">float</span> param_freq,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">float</span> param_qValue,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">float</span> param_gainDb</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        );</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/dca/dsp_filter_8h.html#a254ee3f6745efa5920e091b8a8ef666f">PeakingFilter</a>(</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html">_FILT_COEF</a> *param_FiltCoef,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">float</span> param_freq,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">float</span> param_qValue,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">float</span> param_gainDb</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        );</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/dca/dsp_filter_8h.html#a96bf6847c0943b24c9809daa7fc081a9">PeqFilter</a>(</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html">_FILT_COEF</a> *param_FiltCoef,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">float</span> param_freq,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">float</span> param_qValue,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">float</span> param_gainDb</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        );</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/dca/dsp_filter_8h.html#ae890b45a0c6b9efc1dd5bf146312f21a">ShelvingFilter1stLow</a>(</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html">_FILT_COEF</a> *param_FiltCoef,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">float</span> param_freq,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">float</span> param_qValue,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">float</span> param_gainDb</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        );</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DSPFILTER_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="dsp_filter_8h_html_a254ee3f6745efa5920e091b8a8ef666f"><div class="ttname"><a href="../../de/dca/dsp_filter_8h.html#a254ee3f6745efa5920e091b8a8ef666f">PeakingFilter</a></div><div class="ttdeci">void PeakingFilter(_FILT_COEF *param_FiltCoef, float param_freq, float param_qValue, float param_gainDb)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d88/dsp_filter_8c_source.html#l00126">dspFilter.c:126</a></div></div>
+<div class="ttc" id="struct_____f_i_l_t___c_o_e_f_html_aeb8fe784561c14b524f8d8527c723b2c"><div class="ttname"><a href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html#aeb8fe784561c14b524f8d8527c723b2c">__FILT_COEF::a2</a></div><div class="ttdeci">float a2</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dca/dsp_filter_8h_source.html#l00020">dspFilter.h:20</a></div></div>
+<div class="ttc" id="struct_____f_i_l_t___c_o_e_f_html"><div class="ttname"><a href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html">__FILT_COEF</a></div><div class="ttdoc">Floating point Filter Coefficient Structures. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/dca/dsp_filter_8h_source.html#l00014">dspFilter.h:14</a></div></div>
+<div class="ttc" id="dsp_filter_8h_html_a96bf6847c0943b24c9809daa7fc081a9"><div class="ttname"><a href="../../de/dca/dsp_filter_8h.html#a96bf6847c0943b24c9809daa7fc081a9">PeqFilter</a></div><div class="ttdeci">void PeqFilter(_FILT_COEF *param_FiltCoef, float param_freq, float param_qValue, float param_gainDb)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d88/dsp_filter_8c_source.html#l00177">dspFilter.c:177</a></div></div>
+<div class="ttc" id="struct_____f_i_l_t___c_o_e_f_html_a6b091370c641032308e29256f8ed3ea1"><div class="ttname"><a href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html#a6b091370c641032308e29256f8ed3ea1">__FILT_COEF::b1</a></div><div class="ttdeci">float b1</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dca/dsp_filter_8h_source.html#l00017">dspFilter.h:17</a></div></div>
+<div class="ttc" id="struct_____q___f_o_r_m_a_t_html_a0fc0b104bef03cc7de69bbb5e06cf942"><div class="ttname"><a href="../../de/d4e/struct_____q___f_o_r_m_a_t.html#a0fc0b104bef03cc7de69bbb5e06cf942">__Q_FORMAT::b0</a></div><div class="ttdeci">int b0</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dca/dsp_filter_8h_source.html#l00028">dspFilter.h:28</a></div></div>
+<div class="ttc" id="struct_____q___f_o_r_m_a_t_html_adf82b4d95ce195a01c00f0c2f4e043f5"><div class="ttname"><a href="../../de/d4e/struct_____q___f_o_r_m_a_t.html#adf82b4d95ce195a01c00f0c2f4e043f5">__Q_FORMAT::a2</a></div><div class="ttdeci">int a2</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dca/dsp_filter_8h_source.html#l00032">dspFilter.h:32</a></div></div>
+<div class="ttc" id="struct_____f_i_l_t___c_o_e_f_html_ab7a4e5aa04e332119f7ed50b2fdf55bc"><div class="ttname"><a href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html#ab7a4e5aa04e332119f7ed50b2fdf55bc">__FILT_COEF::b0</a></div><div class="ttdeci">float b0</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dca/dsp_filter_8h_source.html#l00016">dspFilter.h:16</a></div></div>
+<div class="ttc" id="dsp_filter_8h_html_a8d5e02bc4a738671a9b7841ea6d12e2c"><div class="ttname"><a href="../../de/dca/dsp_filter_8h.html#a8d5e02bc4a738671a9b7841ea6d12e2c">ShelvingFilter2ndLow</a></div><div class="ttdeci">void ShelvingFilter2ndLow(_FILT_COEF *param_FiltCoef, float param_freq, float param_qValue, float param_gainDb)</div><div class="ttdoc">2nd Order Low Frequency Shelving Filter Coefficient Calculation Function </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d88/dsp_filter_8c_source.html#l00025">dspFilter.c:25</a></div></div>
+<div class="ttc" id="struct_____q___f_o_r_m_a_t_html_a3bdaae0a32b731c7aadb02b96334e254"><div class="ttname"><a href="../../de/d4e/struct_____q___f_o_r_m_a_t.html#a3bdaae0a32b731c7aadb02b96334e254">__Q_FORMAT::a1</a></div><div class="ttdeci">int a1</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dca/dsp_filter_8h_source.html#l00031">dspFilter.h:31</a></div></div>
+<div class="ttc" id="dsp_filter_8h_html_ae890b45a0c6b9efc1dd5bf146312f21a"><div class="ttname"><a href="../../de/dca/dsp_filter_8h.html#ae890b45a0c6b9efc1dd5bf146312f21a">ShelvingFilter1stLow</a></div><div class="ttdeci">void ShelvingFilter1stLow(_FILT_COEF *param_FiltCoef, float param_freq, float param_qValue, float param_gainDb)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d88/dsp_filter_8c_source.html#l00242">dspFilter.c:242</a></div></div>
+<div class="ttc" id="struct_____q___f_o_r_m_a_t_html_aea8cafcb12a82b3f125480d1c0ac0d97"><div class="ttname"><a href="../../de/d4e/struct_____q___f_o_r_m_a_t.html#aea8cafcb12a82b3f125480d1c0ac0d97">__Q_FORMAT::b2</a></div><div class="ttdeci">int b2</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dca/dsp_filter_8h_source.html#l00030">dspFilter.h:30</a></div></div>
+<div class="ttc" id="struct_____f_i_l_t___c_o_e_f_html_a0a8a4d4cc79f407d2123b75794233cd8"><div class="ttname"><a href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html#a0a8a4d4cc79f407d2123b75794233cd8">__FILT_COEF::a1</a></div><div class="ttdeci">float a1</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dca/dsp_filter_8h_source.html#l00019">dspFilter.h:19</a></div></div>
+<div class="ttc" id="struct_____q___f_o_r_m_a_t_html_af204737e7c2b102b6c9a5272b9fe6856"><div class="ttname"><a href="../../de/d4e/struct_____q___f_o_r_m_a_t.html#af204737e7c2b102b6c9a5272b9fe6856">__Q_FORMAT::b1</a></div><div class="ttdeci">int b1</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dca/dsp_filter_8h_source.html#l00029">dspFilter.h:29</a></div></div>
+<div class="ttc" id="struct_____q___f_o_r_m_a_t_html"><div class="ttname"><a href="../../de/d4e/struct_____q___f_o_r_m_a_t.html">__Q_FORMAT</a></div><div class="ttdoc">Q Formatted Filter Coefficient Sturctures. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/dca/dsp_filter_8h_source.html#l00026">dspFilter.h:26</a></div></div>
+<div class="ttc" id="dsp_filter_8h_html_aeceef54faa278512cd3b46e47d71de18"><div class="ttname"><a href="../../de/dca/dsp_filter_8h.html#aeceef54faa278512cd3b46e47d71de18">_FILT_COEF</a></div><div class="ttdeci">struct __FILT_COEF _FILT_COEF</div><div class="ttdoc">Floating point Filter Coefficient Structures. </div></div>
+<div class="ttc" id="dsp_filter_8h_html_a15386878cb5f5b907f6d2a31f6b275f4"><div class="ttname"><a href="../../de/dca/dsp_filter_8h.html#a15386878cb5f5b907f6d2a31f6b275f4">ShelvingFilter2ndHigh</a></div><div class="ttdeci">void ShelvingFilter2ndHigh(_FILT_COEF *param_FiltCoef, float param_freq, float param_qValue, float param_gainDb)</div><div class="ttdoc">2nd Order High Frequency Shelving Filter Coefficient Calculation </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d88/dsp_filter_8c_source.html#l00076">dspFilter.c:76</a></div></div>
+<div class="ttc" id="struct_____f_i_l_t___c_o_e_f_html_a5d1f0db7785187119dbdd01681d9d230"><div class="ttname"><a href="../../dd/db8/struct_____f_i_l_t___c_o_e_f.html#a5d1f0db7785187119dbdd01681d9d230">__FILT_COEF::b2</a></div><div class="ttdeci">float b2</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dca/dsp_filter_8h_source.html#l00018">dspFilter.h:18</a></div></div>
+<div class="ttc" id="dsp_filter_8h_html_ad441c1c66a421036640642bf5f66b7fa"><div class="ttname"><a href="../../de/dca/dsp_filter_8h.html#ad441c1c66a421036640642bf5f66b7fa">_Q_FORMAT</a></div><div class="ttdeci">struct __Q_FORMAT _Q_FORMAT</div><div class="ttdoc">Q Formatted Filter Coefficient Sturctures. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../de/dca/dsp_filter_8h.html">dspFilter.h</a></li>
+    <li class="footer">생성시간 : 금 6월 12 2015 08:36:35, 프로젝트명 : xmos_HelloWorld, 생성자 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
+  </ul>
+</div>
+</body>
+</html>

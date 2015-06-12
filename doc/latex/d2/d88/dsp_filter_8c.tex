@@ -1,0 +1,223 @@
+\hypertarget{dsp_filter_8c}{\section{dsp\+Filter.\+c 파일 참조}
+\label{dsp_filter_8c}\index{dsp\+Filter.\+c@{dsp\+Filter.\+c}}
+}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$ctype.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}dsp\+Filter.\+h\char`\"{}}\\*
+dsp\+Filter.\+c에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d18/dsp_filter_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{dsp_filter_8c_a8d5e02bc4a738671a9b7841ea6d12e2c}{Shelving\+Filter2nd\+Low} (\hyperlink{dsp_filter_8h_aeceef54faa278512cd3b46e47d71de18}{\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F} $\ast$param\+\_\+\+Filt\+Coef, float param\+\_\+freq, float param\+\_\+q\+Value, float param\+\_\+gain\+Db)
+\begin{DoxyCompactList}\small\item\em 2nd Order Low Frequency Shelving Filter Coefficient Calculation Function \end{DoxyCompactList}\item 
+void \hyperlink{dsp_filter_8c_a15386878cb5f5b907f6d2a31f6b275f4}{Shelving\+Filter2nd\+High} (\hyperlink{dsp_filter_8h_aeceef54faa278512cd3b46e47d71de18}{\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F} $\ast$param\+\_\+\+Filt\+Coef, float param\+\_\+freq, float param\+\_\+q\+Value, float param\+\_\+gain\+Db)
+\begin{DoxyCompactList}\small\item\em 2nd Order High Frequency Shelving Filter Coefficient Calculation \end{DoxyCompactList}\item 
+void \hyperlink{dsp_filter_8c_a254ee3f6745efa5920e091b8a8ef666f}{Peaking\+Filter} (\hyperlink{dsp_filter_8h_aeceef54faa278512cd3b46e47d71de18}{\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F} $\ast$param\+\_\+\+Filt\+Coef, float param\+\_\+freq, float param\+\_\+q\+Value, float param\+\_\+gain\+Db)
+\item 
+void \hyperlink{dsp_filter_8c_a96bf6847c0943b24c9809daa7fc081a9}{Peq\+Filter} (\hyperlink{dsp_filter_8h_aeceef54faa278512cd3b46e47d71de18}{\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F} $\ast$param\+\_\+\+Filt\+Coef, float param\+\_\+freq, float param\+\_\+q\+Value, float param\+\_\+gain\+Db)
+\item 
+void \hyperlink{dsp_filter_8c_ae890b45a0c6b9efc1dd5bf146312f21a}{Shelving\+Filter1st\+Low} (\hyperlink{dsp_filter_8h_aeceef54faa278512cd3b46e47d71de18}{\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F} $\ast$param\+\_\+\+Filt\+Coef, float param\+\_\+freq, float param\+\_\+q\+Value, float param\+\_\+gain\+Db)
+\end{DoxyCompactItemize}
+\subsection*{변수}
+\begin{DoxyCompactItemize}
+\item 
+const float \hyperlink{dsp_filter_8c_ada0744b21abba6961e3e55749e1eee1f}{g\+\_\+two\+Pi}
+\item 
+const float \hyperlink{dsp_filter_8c_a171eefc2107c2a6148dd6b050aa629ea}{g\+\_\+fs}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+Created on\+: 2015. 6. 10. Author\+: i04055dt 
+
+\hyperlink{dsp_filter_8c_source}{dsp\+Filter.\+c} 파일에서 정의되었습니다.
+
+
+
+\subsection{함수 문서화}
+\hypertarget{dsp_filter_8c_a254ee3f6745efa5920e091b8a8ef666f}{\index{dsp\+Filter.\+c@{dsp\+Filter.\+c}!Peaking\+Filter@{Peaking\+Filter}}
+\index{Peaking\+Filter@{Peaking\+Filter}!dsp\+Filter.\+c@{dsp\+Filter.\+c}}
+\subsubsection[{Peaking\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}void Peaking\+Filter (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F} $\ast$}]{param\+\_\+\+Filt\+Coef, }
+\item[{float}]{param\+\_\+freq, }
+\item[{float}]{param\+\_\+q\+Value, }
+\item[{float}]{param\+\_\+gain\+Db}
+\end{DoxyParamCaption}
+)}}\label{dsp_filter_8c_a254ee3f6745efa5920e091b8a8ef666f}
+2nd Order Peaking Filter Coefficient Calculation Function 
+\begin{DoxyParams}{매개변수}
+{\em param\+\_\+\+Filt\+Coef} & \\
+\hline
+{\em param\+\_\+freq} & \\
+\hline
+{\em param\+\_\+q\+Value} & \\
+\hline
+{\em param\+\_\+gain\+Db} & \\
+\hline
+\end{DoxyParams}
+
+
+dsp\+Filter.\+c 파일의 126 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::a1, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::a2, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b0, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b1, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b2, g\+\_\+fs, g\+\_\+two\+Pi.
+
+\hypertarget{dsp_filter_8c_a96bf6847c0943b24c9809daa7fc081a9}{\index{dsp\+Filter.\+c@{dsp\+Filter.\+c}!Peq\+Filter@{Peq\+Filter}}
+\index{Peq\+Filter@{Peq\+Filter}!dsp\+Filter.\+c@{dsp\+Filter.\+c}}
+\subsubsection[{Peq\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}void Peq\+Filter (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F} $\ast$}]{param\+\_\+\+Filt\+Coef, }
+\item[{float}]{param\+\_\+freq, }
+\item[{float}]{param\+\_\+q\+Value, }
+\item[{float}]{param\+\_\+gain\+Db}
+\end{DoxyParamCaption}
+)}}\label{dsp_filter_8c_a96bf6847c0943b24c9809daa7fc081a9}
+2nd Order Biquad P\+E\+Q Filter Coefficient Calculation Function 
+\begin{DoxyParams}{매개변수}
+{\em param\+\_\+\+Filt\+Coef} & \\
+\hline
+{\em param\+\_\+freq} & \\
+\hline
+{\em param\+\_\+gain\+Db} & \\
+\hline
+{\em param\+\_\+q\+Value} & \\
+\hline
+\end{DoxyParams}
+
+
+dsp\+Filter.\+c 파일의 177 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::a1, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::a2, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b0, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b1, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b2, g\+\_\+fs, g\+\_\+two\+Pi.
+
+\hypertarget{dsp_filter_8c_ae890b45a0c6b9efc1dd5bf146312f21a}{\index{dsp\+Filter.\+c@{dsp\+Filter.\+c}!Shelving\+Filter1st\+Low@{Shelving\+Filter1st\+Low}}
+\index{Shelving\+Filter1st\+Low@{Shelving\+Filter1st\+Low}!dsp\+Filter.\+c@{dsp\+Filter.\+c}}
+\subsubsection[{Shelving\+Filter1st\+Low}]{\setlength{\rightskip}{0pt plus 5cm}void Shelving\+Filter1st\+Low (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F} $\ast$}]{param\+\_\+\+Filt\+Coef, }
+\item[{float}]{param\+\_\+freq, }
+\item[{float}]{param\+\_\+q\+Value, }
+\item[{float}]{param\+\_\+gain\+Db}
+\end{DoxyParamCaption}
+)}}\label{dsp_filter_8c_ae890b45a0c6b9efc1dd5bf146312f21a}
+1st Order Low Frequency Shelving Filter Coefficient Calculation Function 
+\begin{DoxyParams}{매개변수}
+{\em param\+\_\+\+Filt\+Coef} & \\
+\hline
+{\em param\+\_\+freq} & \\
+\hline
+{\em param\+\_\+gain\+Db} & \\
+\hline
+{\em param\+\_\+q\+Value} & \\
+\hline
+\end{DoxyParams}
+
+
+dsp\+Filter.\+c 파일의 242 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::a1, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::a2, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b0, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b1, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b2, g\+\_\+fs, g\+\_\+two\+Pi.
+
+\hypertarget{dsp_filter_8c_a15386878cb5f5b907f6d2a31f6b275f4}{\index{dsp\+Filter.\+c@{dsp\+Filter.\+c}!Shelving\+Filter2nd\+High@{Shelving\+Filter2nd\+High}}
+\index{Shelving\+Filter2nd\+High@{Shelving\+Filter2nd\+High}!dsp\+Filter.\+c@{dsp\+Filter.\+c}}
+\subsubsection[{Shelving\+Filter2nd\+High}]{\setlength{\rightskip}{0pt plus 5cm}void Shelving\+Filter2nd\+High (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F} $\ast$}]{param\+\_\+\+Filt\+Coef, }
+\item[{float}]{param\+\_\+freq, }
+\item[{float}]{param\+\_\+q\+Value, }
+\item[{float}]{param\+\_\+gain\+Db}
+\end{DoxyParamCaption}
+)}}\label{dsp_filter_8c_a15386878cb5f5b907f6d2a31f6b275f4}
+
+
+2nd Order High Frequency Shelving Filter Coefficient Calculation 
+
+
+\begin{DoxyParams}{매개변수}
+{\em param\+\_\+\+Filt\+Coef} & \\
+\hline
+{\em param\+\_\+freq} & \\
+\hline
+{\em param\+\_\+gain\+Db} & \\
+\hline
+{\em param\+\_\+q\+Value} & \\
+\hline
+\end{DoxyParams}
+
+
+dsp\+Filter.\+c 파일의 76 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::a1, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::a2, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b0, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b1, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b2, g\+\_\+fs, g\+\_\+two\+Pi.
+
+\hypertarget{dsp_filter_8c_a8d5e02bc4a738671a9b7841ea6d12e2c}{\index{dsp\+Filter.\+c@{dsp\+Filter.\+c}!Shelving\+Filter2nd\+Low@{Shelving\+Filter2nd\+Low}}
+\index{Shelving\+Filter2nd\+Low@{Shelving\+Filter2nd\+Low}!dsp\+Filter.\+c@{dsp\+Filter.\+c}}
+\subsubsection[{Shelving\+Filter2nd\+Low}]{\setlength{\rightskip}{0pt plus 5cm}void Shelving\+Filter2nd\+Low (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F} $\ast$}]{param\+\_\+\+Filt\+Coef, }
+\item[{float}]{param\+\_\+freq, }
+\item[{float}]{param\+\_\+q\+Value, }
+\item[{float}]{param\+\_\+gain\+Db}
+\end{DoxyParamCaption}
+)}}\label{dsp_filter_8c_a8d5e02bc4a738671a9b7841ea6d12e2c}
+
+
+2nd Order Low Frequency Shelving Filter Coefficient Calculation Function 
+
+
+\begin{DoxyParams}{매개변수}
+{\em param\+\_\+\+Filt\+Coef} & \\
+\hline
+{\em param\+\_\+freq} & \\
+\hline
+{\em param\+\_\+q\+Value} & \\
+\hline
+{\em param\+\_\+gain\+Db} & \\
+\hline
+\end{DoxyParams}
+
+
+dsp\+Filter.\+c 파일의 25 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::a1, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::a2, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b0, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b1, \+\_\+\+\_\+\+F\+I\+L\+T\+\_\+\+C\+O\+E\+F\+::b2, g\+\_\+fs, g\+\_\+two\+Pi.
+
+
+
+\subsection{변수 문서화}
+\hypertarget{dsp_filter_8c_a171eefc2107c2a6148dd6b050aa629ea}{\index{dsp\+Filter.\+c@{dsp\+Filter.\+c}!g\+\_\+fs@{g\+\_\+fs}}
+\index{g\+\_\+fs@{g\+\_\+fs}!dsp\+Filter.\+c@{dsp\+Filter.\+c}}
+\subsubsection[{g\+\_\+fs}]{\setlength{\rightskip}{0pt plus 5cm}const float g\+\_\+fs}}\label{dsp_filter_8c_a171eefc2107c2a6148dd6b050aa629ea}
+
+
+dsp\+Q\+Format\+Convert.\+c 파일의 15 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Peaking\+Filter(), Peq\+Filter(), Shelving\+Filter1st\+Low(), Shelving\+Filter2nd\+High(), Shelving\+Filter2nd\+Low().
+
+\hypertarget{dsp_filter_8c_ada0744b21abba6961e3e55749e1eee1f}{\index{dsp\+Filter.\+c@{dsp\+Filter.\+c}!g\+\_\+two\+Pi@{g\+\_\+two\+Pi}}
+\index{g\+\_\+two\+Pi@{g\+\_\+two\+Pi}!dsp\+Filter.\+c@{dsp\+Filter.\+c}}
+\subsubsection[{g\+\_\+two\+Pi}]{\setlength{\rightskip}{0pt plus 5cm}const float g\+\_\+two\+Pi}}\label{dsp_filter_8c_ada0744b21abba6961e3e55749e1eee1f}
+
+
+dsp\+Q\+Format\+Convert.\+c 파일의 14 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Peaking\+Filter(), Peq\+Filter(), Shelving\+Filter1st\+Low(), Shelving\+Filter2nd\+High(), Shelving\+Filter2nd\+Low().
+

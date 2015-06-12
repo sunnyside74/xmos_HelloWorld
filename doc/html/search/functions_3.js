@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['shelvingfilter1stlow',['ShelvingFilter1stLow',['../d2/d88/dsp_filter_8c.html#ae890b45a0c6b9efc1dd5bf146312f21a',1,'ShelvingFilter1stLow(_FILT_COEF *param_FiltCoef, float param_freq, float param_qValue, float param_gainDb):&#160;dspFilter.c'],['../de/dca/dsp_filter_8h.html#ae890b45a0c6b9efc1dd5bf146312f21a',1,'ShelvingFilter1stLow(_FILT_COEF *param_FiltCoef, float param_freq, float param_qValue, float param_gainDb):&#160;dspFilter.c']]],
+  ['shelvingfilter2ndhigh',['ShelvingFilter2ndHigh',['../d2/d88/dsp_filter_8c.html#a15386878cb5f5b907f6d2a31f6b275f4',1,'ShelvingFilter2ndHigh(_FILT_COEF *param_FiltCoef, float param_freq, float param_qValue, float param_gainDb):&#160;dspFilter.c'],['../de/dca/dsp_filter_8h.html#a15386878cb5f5b907f6d2a31f6b275f4',1,'ShelvingFilter2ndHigh(_FILT_COEF *param_FiltCoef, float param_freq, float param_qValue, float param_gainDb):&#160;dspFilter.c']]],
+  ['shelvingfilter2ndlow',['ShelvingFilter2ndLow',['../d2/d88/dsp_filter_8c.html#a8d5e02bc4a738671a9b7841ea6d12e2c',1,'ShelvingFilter2ndLow(_FILT_COEF *param_FiltCoef, float param_freq, float param_qValue, float param_gainDb):&#160;dspFilter.c'],['../de/dca/dsp_filter_8h.html#a8d5e02bc4a738671a9b7841ea6d12e2c',1,'ShelvingFilter2ndLow(_FILT_COEF *param_FiltCoef, float param_freq, float param_qValue, float param_gainDb):&#160;dspFilter.c']]]
+];

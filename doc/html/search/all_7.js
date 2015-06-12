@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['peakingfilter',['PeakingFilter',['../d2/d88/dsp_filter_8c.html#a254ee3f6745efa5920e091b8a8ef666f',1,'PeakingFilter(_FILT_COEF *param_FiltCoef, float param_freq, float param_qValue, float param_gainDb):&#160;dspFilter.c'],['../de/dca/dsp_filter_8h.html#a254ee3f6745efa5920e091b8a8ef666f',1,'PeakingFilter(_FILT_COEF *param_FiltCoef, float param_freq, float param_qValue, float param_gainDb):&#160;dspFilter.c']]],
+  ['peqfilter',['PeqFilter',['../d2/d88/dsp_filter_8c.html#a96bf6847c0943b24c9809daa7fc081a9',1,'PeqFilter(_FILT_COEF *param_FiltCoef, float param_freq, float param_qValue, float param_gainDb):&#160;dspFilter.c'],['../de/dca/dsp_filter_8h.html#a96bf6847c0943b24c9809daa7fc081a9',1,'PeqFilter(_FILT_COEF *param_FiltCoef, float param_freq, float param_qValue, float param_gainDb):&#160;dspFilter.c']]],
+  ['printcoef',['PrintCoef',['../d3/d27/dsp_q_format_convert_8c.html#a5f03ce0a0de11a675df423d641fe58b2',1,'PrintCoef(int mode, _FILT_COEF param_tFiltCoef, _Q_FORMAT param_tFiltQForm, float valFreq, float valQ, float valGain):&#160;dspQFormatConvert.c'],['../d9/d5e/dsp_q_format_convert_8h.html#a5f03ce0a0de11a675df423d641fe58b2',1,'PrintCoef(int mode, _FILT_COEF param_tFiltCoef, _Q_FORMAT param_tFiltQForm, float valFreq, float valQ, float valGain):&#160;dspQFormatConvert.c']]]
+];
